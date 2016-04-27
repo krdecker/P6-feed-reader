@@ -113,11 +113,10 @@ $(function() {
 
     /* Fourth test suite concerned with switching to new feed */
     describe('New Feed Selection', function () {
-        var _old_val = "";
+        var oldLink = "";
         // store first link in list, then change feed
         beforeEach(function(done) {
-            _old_val = $('.feed > .entry-link').attr("href");
-            console.log(_old_val);
+            oldLink = $('.feed > .entry-link').attr("href");
             loadFeed(1, function(){
                 done();
             });
@@ -129,7 +128,7 @@ $(function() {
          */
         // test if the link has changed
         it('changes content', function (done) {
-            expect($('.feed > .entry-link').attr("href")).not.toBe(_old_val);
+            expect($('.feed > .entry-link').attr("href")).not.toBe(oldLink);
             done();
         });
 
