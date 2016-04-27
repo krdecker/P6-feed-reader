@@ -21,7 +21,7 @@ I learned how to use Jasmine to write a number of tests against a pre-existing a
 * Good tests give us the ability to quickly analyze whether new code breaks an existing feature within our codebase, without having to manually test all of the functionality.
 
 
-# How did I complete this project?
+## How did I complete this project?
 
 1. Downloaded the [required project assets](http://github.com/udacity/frontend-nanodegree-feedreader).
 2. Reviewed the functionality of the application in browser.
@@ -44,4 +44,6 @@ I learned how to use Jasmine to write a number of tests against a pre-existing a
 
 ### "New Feed Selection" suite:
 13. Wrote a test that ensures when a new feed is loaded by the loadFeed function that the content actually changes. As above, loadFeed() is asynchronous.
-14. When completed - all of my tests passed.
+
+
+#### When completed - all of my tests passed.
