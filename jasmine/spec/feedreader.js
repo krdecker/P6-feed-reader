@@ -116,10 +116,12 @@ $(function() {
         var oldLink = "";
         // store first link in list, then change feed
         beforeEach(function(done) {
-            oldLink = $('.feed > .entry-link').attr("href");
-            loadFeed(1, function(){
-                done();
+            loadFeed(0, function(done) {
+                oldLink = $('.feed > .entry-link').attr("href");
+                console.log(oldLink);
+                loadFeed(1, done);
             });
+            done();
         });
         /* Test that when a new feed is loaded by the loadFeed function
          * the content actually changes.
@@ -127,9 +129,9 @@ $(function() {
          * function to return.
          */
         // test if the link has changed
-        it('changes content', function (done) {
+        it('changes content', function () {
+            console.log($('.feed > .entry-link').attr("href"));
             expect($('.feed > .entry-link').attr("href")).not.toBe(oldLink);
-            done();
         });
 
         // reset to initial state
