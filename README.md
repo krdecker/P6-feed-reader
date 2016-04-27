@@ -28,20 +28,20 @@ I learned how to use Jasmine to write a number of tests against a pre-existing a
 3. Explored the application's HTML (*./index.html*), CSS (*./css/style.css*) and JavaScript (*./js/app.js*) to gain an understanding of how it works.
 4. Explored the Jasmine spec file in *./jasmine/spec/feedreader.js*
 
-# "All Feeds" suite:
+### "All Feeds" suite:
 5. Edited the allFeeds variable in *./js/app.js* to make the provided test fail and see how Jasmine visualizes this failure in the application.
 6. Return the allFeeds variable to a passing state.
 7. Wrote a test that loops through each feed in the allFeeds object and ensures it has a URL defined and that the URL is not empty.
 8. Wrote a test that loops through each feed in the allFeeds object and ensures it has a name defined and that the name is not empty.
 
-# "The Menu" suite:
+### "The Menu" suite:
 9. Wrote a new test suite named "The menu".
 10. Wrote a test that ensures the menu element is hidden by default. I had to analyze the HTML and the CSS to determine how we're performing the hiding/showing of the menu element.
 11. Wrote a test that ensures the menu changes visibility when the menu icon is clicked. This test should has two expectations: does the menu display when clicked and does it hide when clicked again.
 
-# "Initial Entries" suite:
+### "Initial Entries" suite:
 12. Wrote a test that ensures when the loadFeed function is called and completes its work, there is at least a single .entry element within the .feed container. Remember, loadFeed() is asynchronous so this test requires the use of Jasmine's beforeEach and asynchronous done() function.
 
-# "New Feed Selection" suite:
+### "New Feed Selection" suite:
 13. Wrote a test that ensures when a new feed is loaded by the loadFeed function that the content actually changes. As above, loadFeed() is asynchronous.
 14. When completed - all of my tests passed.
