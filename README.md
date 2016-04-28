@@ -47,3 +47,17 @@ I learned how to use Jasmine to write a number of tests against a pre-existing a
 
 
 #### When completed - all of my tests passed.
+
+consulted:
+<https://lostechies.com/derickbailey/2012/08/18/jasmine-async-making-asynchronous-testing-with-jasmine-suck-less/>
+
+<http://www.htmlgoodies.com/beyond/javascript/stips/using-jasmine-2.0s-new-done-function-to-test-asynchronous-processes.html>
+
+<http://blogs.lessthandot.com/index.php/webdev/uidevelopment/javascript/testing-asynchronous-javascript-w-jasmine/>
+
+<http://www.html5rocks.com/en/tutorials/es6/promises/>
+
+<https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md>
+
+and of course:
+<https://github.com/jasmine/jasmine>

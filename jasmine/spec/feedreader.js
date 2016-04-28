@@ -70,20 +70,18 @@ $(function() {
          // * has two expectations: the menu slides into view when
          // * icon is clicked and it hides when icon is clicked again.
 
-        it('display toggles when clicked', function() {
-            // start with menu hidden
-            $('body').addClass('menu-hidden');
+        it('toggles display when icon is clicked', function() {
             // simulate user clicking mouse on icon
             $('.menu-icon-link').click();
             // menu should not be hidden now
             expect($('body').hasClass('menu-hidden')).toBe(false);
-            // wait a second, then click it again
+            // wait a second (just because I want to see the
+            // menu slide in) then click it again
             // and menu should be hidden
             setTimeout( function(){
                 $('.menu-icon-link').click();
                 expect($('body').hasClass('menu-hidden')).toBe(true);
             }, 1000);
-
         });
     });
 
@@ -94,9 +92,7 @@ $(function() {
      */
     describe('Initial Entries', function () {
         beforeEach(function(done) {
-                loadFeed(0, function(){
-                done();
-            });
+                loadFeed(0, done);
         });
 
         /* Test to ensure when the loadFeed function is called and completes its work
@@ -117,19 +113,17 @@ $(function() {
         beforeEach(function(done) {
             loadFeed(0, function() {
                 oldLink = $('.feed > .entry-link').attr("href");
-                console.log(oldLink);
                 loadFeed(1,done);
             });
         });
 
         /* Test that when a new feed is loaded by the loadFeed function
          * the content actually changes.
-         * As above, loadFeed() is asynchronous, so we wait for the done()
+         * As above, loadFeed() is asynchronous, so we wait for the done
          * function to return.
          */
         // test if the link has changed
         it('changes content', function (){
-            console.log($('.feed > .entry-link').attr("href"));
             expect($('.feed > .entry-link').attr("href")).not.toBe(oldLink);
         });
 
