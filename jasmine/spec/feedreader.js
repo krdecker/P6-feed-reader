@@ -104,10 +104,9 @@ $(function() {
          * As loadFeed() is asynchronous, this test requires
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
-        it('are at least one', function (done) {
+        it('are at least one', function () {
             // grab the array of entries and check the lengthdx
             expect($('.feed > .entry-link > .entry').length).toBeGreaterThan(0);
-            done();
         });
     });
 
@@ -116,20 +115,20 @@ $(function() {
         var oldLink = "";
         // store first link in list, then change feed
         beforeEach(function(done) {
-            loadFeed(0, function(done) {
+            loadFeed(0, function() {
                 oldLink = $('.feed > .entry-link').attr("href");
                 console.log(oldLink);
-                loadFeed(1, done);
+                loadFeed(1,done);
             });
-            done();
         });
+
         /* Test that when a new feed is loaded by the loadFeed function
          * the content actually changes.
          * As above, loadFeed() is asynchronous, so we wait for the done()
          * function to return.
          */
         // test if the link has changed
-        it('changes content', function () {
+        it('changes content', function (){
             console.log($('.feed > .entry-link').attr("href"));
             expect($('.feed > .entry-link').attr("href")).not.toBe(oldLink);
         });
