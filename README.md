@@ -2,7 +2,7 @@
 
 In this project, I was given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we were left with an application with an incomplete test suite. That's where I came in.
 
-### To see this app in operation, download or clone the repo and then seek out the frontend-nanodegree-feedreader-master/index.html in the browser.
+### To see this app in operation, download or clone the repo and then seek out the file: P6-feedreader/index.html in the browser.
 
 ## Why this Project?
 
