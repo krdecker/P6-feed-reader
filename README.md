@@ -2,6 +2,7 @@
 
 In this project, I was given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we were left with an application with an incomplete test suite. That's where I came in.
 
+### To see this app in operation, download or clone the repo and then seek out the frontend-nanodegree-feedreader-master/index.html in the browser.
 
 ## Why this Project?
 
@@ -30,7 +31,7 @@ I learned how to use Jasmine to write a number of tests against a pre-existing a
 
 ### "All Feeds" suite:
 5. Edited the allFeeds variable in *./js/app.js* to make the provided test fail and see how Jasmine visualizes this failure in the application.
-6. Return the allFeeds variable to a passing state.
+6. Returned the allFeeds variable to a passing state.
 7. Wrote a test that loops through each feed in the allFeeds object and ensures it has a URL defined and that the URL is not empty.
 8. Wrote a test that loops through each feed in the allFeeds object and ensures it has a name defined and that the name is not empty.
 
